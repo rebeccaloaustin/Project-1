@@ -53,3 +53,7 @@ body{
 .greenbtn:hover {
     background-color: #00b34b; 
 }
+
+.leveldisplay{
+    color: white;
+}
