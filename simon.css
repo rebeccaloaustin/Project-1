@@ -1,59 +1,42 @@
-body{
-    background-color: rgb(40, 39, 39);
-    text-align: center;
-    margin-top: 300px;
+body {
+  background-color: rgb(40, 39, 39);
+  color: white;
+  text-align: center;
+  margin-top: 300px;
 }
-.redbtn {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%; 
-    background-color: #ff6256; 
-    cursor: pointer;
-    border:none;
-    
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
 }
-
-.redbtn:hover {
-    background-color: #f74a3d; 
+.btn:hover {
+  opacity: 85%;
 }
-.bluebtn {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    background-color: #3b71f8; 
-    cursor: pointer;
-    border: none; 
+.inactive {
+  opacity: 35%;
 }
-
-.bluebtn:hover {
-    background-color: rgb(6, 95, 189); 
+.unclickable {
+  pointer-events: none;
 }
-.yellowbtn {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    background-color: #f9fb63; 
-    cursor: pointer;
-    border: none;
-   
+.red {
+  background-color: #ff6256;
 }
 
-.yellowbtn:hover {
-    background-color: #fff943; 
-}
-.greenbtn {
-    width: 100px;
-    height: 100px; 
-    border-radius: 50%; 
-    background-color: #22f052; 
-    cursor: pointer;
-    border: none;
+.blue {
+  background-color: #3b71f8;
 }
 
-.greenbtn:hover {
-    background-color: #00b34b; 
+.yellow {
+  background-color: #f9fb63;
 }
 
-.leveldisplay{
-    color: white;
+.green {
+  background-color: #22f052;
+}
+
+.leveldisplay {
+  color: white;
 }

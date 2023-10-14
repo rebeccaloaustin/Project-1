@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Game</title>
-    <script src="simon.js"></script>
     <link rel="stylesheet" href="simon.css">
+    <script defer src="simon.js"></script>
 </head>
 <body>
-    <button id="startBtn" onclick="startGame()"> Start </button>
-    <button class= "bluebtn" id="blueBtn"></button>
-    <button class= "redbtn" id="redBtn"></button>
-    <button class= "yellowbtn" id="yellowBtn"></button>
-    <button class= "greenbtn" id="greenBtn"></button>
-    <div class= "leveldisplay" id="levelDisplay">Level: 1</div>
-    
+    <button id="startBtn"> Start </button>
+    <div>
+        <div class="btn blue inactive" btn="blue"></div>
+        <div class="btn red inactive" btn="red"></div>
+        <div class="btn yellow inactive" btn="yellow"></div>
+        <div class="btn green inactive" btn="green" ></div>
+    </div>
+   <div class= "leveldisplay" id="levelDisplay">Level: 1</div>
 </body>
 </html>
