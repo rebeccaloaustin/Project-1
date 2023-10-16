@@ -18,6 +18,7 @@ body {
 .inactive {
   opacity: 35%;
 }
+
 .unclickable {
   pointer-events: none;
 }
@@ -36,7 +37,6 @@ body {
 .green {
   background-color: #22f052;
 }
-
 .leveldisplay {
   color: white;
 }
