@@ -2,7 +2,7 @@
 const colors = ["red", "yellow", "green", "blue"];
 let simonSequence = [];
 let userSequence = [];
-let level =1;
+let level;
 let gameStarted = false;
 
 const buttons = document.querySelectorAll(".btn");
@@ -23,7 +23,7 @@ startButton.addEventListener("click", startGame);
 
 //function to start game & start level at 0
 function startGame() {
-  level = 1;
+  level = 0;
   simonSequence = [];
   userSequence = [];
   gameStarted = true;
@@ -37,6 +37,7 @@ function updateLevel() {
 }
 //function that runs the beginning of each level to empty the user array, generates a new color, and plays simonSequence
 function nextLevel() {
+  level += 1;
   updateLevel();
   userSequence = [];
   generateSequence();
@@ -56,16 +57,16 @@ function generateSequence() {
 }
 //function to play simon sequence
 function playSequence(sequence) {
-    let i = 0;
-    function playNextColor() {
-        if (i < sequence.length) {
-            flashBtn(sequence[i]);
-            i++;
-            setTimeout(playNextColor, 800);
-        }
+  let i = 0;
+  function playNextColor() {
+    if (i < sequence.length) {
+      flashBtn(sequence[i]);
+      i++;
+      setTimeout(playNextColor, 800);
     }
+  }
 
-    playNextColor();
+  playNextColor();
 }
 
 //function to flash button
@@ -76,12 +77,12 @@ function flashBtn(color) {
     btn.classList.add("inactive");
   }, 300);
 }
-//function to allow user to click buttons when it's their turn 
+//function to allow user to click buttons when it's their turn
 function userTurn() {
-        buttons.forEach((button) => {
-            button.classList.remove("unclickable");
-        });
-    }
+  buttons.forEach((button) => {
+    button.classList.remove("unclickable");
+  });
+}
 
 //function to check user input
 function checkSequence() {
@@ -102,7 +103,7 @@ function checkSequence() {
   console.log("check sequence runs");
 }
 
-//function to end game 
+//function to end game
 function winGame() {
   alert(" you won! congrats!");
 }
