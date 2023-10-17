@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(40, 39, 39);
+    font-family: Monoton;
+    font-size: 8em;
+    background: #111;
+    text-align: center;
+    margin-top: 200px;
+    text-decoration: none;
+  }
+  body:hover{
+    box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.869), inset 0 0 20px 7px rgba(0, 255, 238, 0.869);
+    text-decoration: none;
+  }

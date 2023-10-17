@@ -6,15 +6,22 @@
     <title>Simon Game</title>
     <link rel="stylesheet" href="simon.css">
     <script defer src="simon.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button id="startBtn"> Start </button>
-    <div>
+    <button class="playBtn" id="startBtn"> Start </button>
+    <div class="container">
         <div class="btn blue inactive" data-color="blue"></div>
         <div class="btn red inactive" data-color="red"></div>
         <div class="btn yellow inactive" data-color="yellow"></div>
         <div class="btn green inactive" data-color="green"></div>
     </div>
    <div class= "leveldisplay" id="levelDisplay">Level: 1</div>
+   <div id="messageBox"> Click start to play! Reach level 15 to win! </div>
 </body>
 </html>

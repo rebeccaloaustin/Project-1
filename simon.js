@@ -8,6 +8,7 @@ let gameStarted = false;
 const buttons = document.querySelectorAll(".btn");
 const levelDisplay = document.getElementById("levelDisplay");
 const startButton = document.getElementById("startBtn");
+const message = document.getElementById("messageBox");
 
 //event listeners for buttons
 buttons.forEach((button) => {
@@ -23,21 +24,22 @@ startButton.addEventListener("click", startGame);
 
 //function to start game & start level at 0
 function startGame() {
+  startButton.classList.add("hidden");
+  message.innerText = "watch the sequence";
   level = 0;
   simonSequence = [];
   userSequence = [];
   gameStarted = true;
   nextLevel();
-  console.log("start game function runs");
 }
 //function to keep track of the current level
 function updateLevel() {
   levelDisplay.textContent = `Level: ${level}`;
-  console.log("update level function runs");
 }
 //function that runs the beginning of each level to empty the user array, generates a new color, and plays simonSequence
 function nextLevel() {
   level += 1;
+  message.innerText = "watch the sequence!";
   updateLevel();
   userSequence = [];
   generateSequence();
@@ -46,29 +48,21 @@ function nextLevel() {
   setTimeout(() => {
     userTurn();
   }, level * 800);
-  console.log("next level function runs");
 }
 
 //function to generate a pattern by simon
 function generateSequence() {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
   simonSequence.push(randomColor);
-  console.log("generate sequence runs");
 }
 //function to play simon sequence
 function playSequence(sequence) {
-  let i = 0;
-  function playNextColor() {
-    if (i < sequence.length) {
-      flashBtn(sequence[i]);
-      i++;
-      setTimeout(playNextColor, 800);
-    }
-  }
-
-  playNextColor();
+  sequence.forEach((color, index) => {
+    setTimeout(() => {
+      flashBtn(color);
+    }, index * 800);
+  });
 }
-
 //function to flash button
 function flashBtn(color) {
   const btn = document.querySelector(`[data-color="${color}"]`);
@@ -82,6 +76,7 @@ function userTurn() {
   buttons.forEach((button) => {
     button.classList.remove("unclickable");
   });
+  message.innerText = "your turn!";
 }
 
 //function to check user input
@@ -97,17 +92,17 @@ function checkSequence() {
     if (level === 15) {
       winGame();
     } else {
+      message.innerText = "good job! keep it up!";
       setTimeout(nextLevel, 1300);
     }
   }
-  console.log("check sequence runs");
 }
 
 //function to end game
 function winGame() {
-  alert(" you won! congrats!");
+  message.innerText = "Congratulations! You win!";
 }
 function gameOver() {
-  alert("you lost, game over!");
+  message.innerText = "Oh no! Game over, you lose!";
   gameStarted = false;
 }
