@@ -15,7 +15,7 @@ body {
     box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.989), inset 0 0 20px 7px rgb(0, 255, 238);
     border-radius:20px;animation: border-flicker 2s linear infinite;
   }
-
+/* learned flicker effect from this resource https://codemyui.com/css-flickering-effect-neon-text/ */
   @keyframes border-flicker {
     0% {
       opacity: 0.1;
