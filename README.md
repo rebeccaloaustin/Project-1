@@ -7,4 +7,4 @@
 
 ☐ Getting Started:  https://rebeccaloaustin.github.io/Simon-Game-Project/
 
-☐ Next Steps: In the future, I would love to add a gameplay option to play with 4 colors or 5 colors. I would also like to add the ability for the lights to flash at faster intervals as the levels increase. 
+☐ Next Steps: In the future, I would love to add a gameplay option to play with 4 colors or 5 colors. I would also like to add the ability for the lights to flash at faster intervals as the levels increase. Would also like to add audio to the landing page when user hovers over the button.
