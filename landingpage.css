@@ -1,13 +1,44 @@
 body {
-    background-color: rgb(40, 39, 39);
     font-family: Monoton;
-    font-size: 8em;
-    background: #111;
+    font-size: 128px;
+    background-image: url(https://media.istockphoto.com/id/1320984490/vector/dark-blue-nightly-brick-wall-realistic-design-background.jpg?s=612x612&w=0&k=20&c=41XKAFqHHsliC_s9tX138MUnE88FzjwxgyRpjLquvVY=);
+    background-size: contain;
     text-align: center;
     margin-top: 200px;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.869), inset 0 0 20px 7px rgba(0, 255, 238, 0.869);
+    border-radius:20px;
+  }
+  .font-effect-neon{
     text-decoration: none;
   }
   body:hover{
-    box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.869), inset 0 0 20px 7px rgba(0, 255, 238, 0.869);
-    text-decoration: none;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.989), inset 0 0 20px 7px rgb(0, 255, 238);
+    border-radius:20px;animation: border-flicker 2s linear infinite;
+  }
+
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.99), inset 0px 0px 30px 4px rgb(0, 255, 238);
+    }
+    2% {
+      opacity: 1;
+      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869), inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+    }
+    4% {
+      opacity: 1;
+      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869), inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+    }
+    8% {
+      opacity: 1;
+      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+    }
+    70% {
+      opacity: 0.7;
+      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+    }
+    100% {
+      opacity: 1;
+      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+    }
   }

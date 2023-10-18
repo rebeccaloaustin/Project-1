@@ -15,16 +15,18 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if (gameStarted) {
       const color = button.dataset.color;
+      const sound = document.querySelector(`[data-sound='${color}']`);
       userSequence.push(color);
+      sound.play();
       checkSequence(color);
     }
   });
 });
 startButton.addEventListener("click", startGame);
 
-//function to start game & start level at 0
+//function to start game & start level at 1
 function startGame() {
-  startButton.classList.add("hidden");
+  startButton.style.display = "none";
   message.innerText = "watch the sequence";
   level = 0;
   simonSequence = [];
@@ -66,7 +68,9 @@ function playSequence(sequence) {
 //function to flash button
 function flashBtn(color) {
   const btn = document.querySelector(`[data-color="${color}"]`);
+  const sound = document.querySelector(`[data-sound='${color}']`);
   btn.classList.remove("inactive");
+  sound.play();
   setTimeout(() => {
     btn.classList.add("inactive");
   }, 300);
@@ -100,9 +104,10 @@ function checkSequence() {
 
 //function to end game
 function winGame() {
-  message.innerText = "Congratulations! You win!";
+  message.innerText = "Congratulations you're a genius! You win!";
 }
 function gameOver() {
-  message.innerText = "Oh no! Game over, you lose!";
+  message.innerText = "Oh no! Game over, you lose. Press start to try again.";
+  startButton.style.display = "block";
   gameStarted = false;
 }

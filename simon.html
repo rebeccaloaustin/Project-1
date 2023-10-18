@@ -15,13 +15,21 @@
 </head>
 <body>
     <button class="playBtn" id="startBtn"> Start </button>
+    <div class="infoTab">How to Play</div>
+   <div class="howToPlay"> To play, remember the color pattern and repeat it by pressing the colored buttons in the correct order until level 15 is reached and player wins.</div>
+    <div id="messageBox"> Click start to play! Reach level 15 to win! </div>
     <div class="container">
         <div class="btn blue inactive" data-color="blue"></div>
         <div class="btn red inactive" data-color="red"></div>
         <div class="btn yellow inactive" data-color="yellow"></div>
         <div class="btn green inactive" data-color="green"></div>
     </div>
+    <audio src="simonSound1.mp3" data-sound="blue"></audio>
+    <audio src="simonSound2.mp3" data-sound="red"></audio>
+    <audio src="simonSound3.mp3" data-sound="yellow"></audio>
+    <audio src="simonSound4.mp3" data-sound="green"></audio>
    <div class= "leveldisplay" id="levelDisplay">Level: 1</div>
-   <div id="messageBox"> Click start to play! Reach level 15 to win! </div>
+   
+   
 </body>
 </html>
