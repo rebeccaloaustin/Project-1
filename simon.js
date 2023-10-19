@@ -43,6 +43,9 @@ function nextLevel() {
   level += 1;
   message.innerText = "watch the sequence!";
   updateLevel();
+  buttons.forEach((button) => {
+    button.classList.add("unclickable");
+  });
   userSequence = [];
   generateSequence();
   playSequence(simonSequence);
