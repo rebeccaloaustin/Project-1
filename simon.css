@@ -26,10 +26,9 @@ body {
   text-shadow: 0 0 5px #cc1af8;
   position: absolute;
   top: 130px;
-  left: 510px; 
+  left: 510px;
   text-align: center;
   width: 490px;
-
 }
 .howToPlay {
   display: none;
