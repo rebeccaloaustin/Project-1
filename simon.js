@@ -107,10 +107,14 @@ function checkSequence() {
 
 //function to end game
 function winGame() {
+  const winGameSound = document.getElementById("winGameSound");
+  winGameSound.play();
   message.innerText = "Congratulations you're a genius! You win!";
 }
 function gameOver() {
   message.innerText = "Oh no! Game over, you lose. Press start to try again.";
+  const gameOverSound = document.getElementById("gameOverSound");
+  gameOverSound.play();
   startButton.style.display = "block";
   gameStarted = false;
 }

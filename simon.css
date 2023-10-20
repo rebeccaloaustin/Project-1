@@ -10,15 +10,7 @@ body {
   position: relative;
   top: 10px;
 }
-.container {
-  position: relative;
-  width: 200px;
-  height: 500px;
-  margin: auto;
-  top: 20px;
-  left: 650px;
-  position: absolute;
-}
+
 #messageBox {
   color: rgb(240, 202, 255);
   font-size: 25px;
@@ -47,6 +39,15 @@ body {
 }
 .infoTab:hover + .howToPlay {
   display: block;
+}
+.container {
+  position: relative;
+  width: 200px;
+  height: 500px;
+  margin: auto;
+  top: 20px;
+  left: 650px;
+  position: absolute;
 }
 .btn {
   width: 100px;
