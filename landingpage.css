@@ -22,7 +22,7 @@ body{
     border-radius:20px;
     animation: border-flicker 2s linear infinite;
   }
-  .simonSequel {
+  .enjoySign {
     text-align: center;
     text-decoration: none;
     margin-top: 400px;
@@ -44,7 +44,7 @@ body{
     border-radius:20px;
   }
   
-  .simonSequel:hover{
+  .enjoySign:hover{
     text-shadow: 0 0 14px #f81ae5;
     cursor: pointer;
     z-index: 2;
