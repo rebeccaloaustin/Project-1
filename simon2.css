@@ -8,7 +8,7 @@ body {
   text-align: center;
   font-family: "Audiowide", sans-serif;
   text-shadow: 0 0 5px #cc1af8;
-  margin-top: 45vh;
+  margin-top: 25vh;
 }
 
 #messageBox {
@@ -28,7 +28,6 @@ body {
   font-family: "Raleway", sans-serif;
   text-shadow: 0 0 5px #cc1af8;
   font-size: 15px;
-  margin-left: 2vh;
   
 }
 .infoTab {
@@ -37,9 +36,6 @@ body {
   font-family: "Audiowide", sans-serif;
   text-shadow: 0 0 5px #cc1af8;
   cursor: pointer;
-  width: fit-content;
-  margin-top: -55vh;
-  margin-left: 2vh;
 }
 .infoTab:hover + .howToPlay {
   display: block;
@@ -48,8 +44,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -35vh;
+  margin-top: 14vh;
   position: relative;
+  left: 1%;
   
 }
 .btn {
@@ -96,6 +93,12 @@ body {
     inset 0 0 20px 7px rgba(0, 255, 20, 0.69);
 }
 
+.purple {
+     border: 8px solid #c28ef7;
+   background-color: #c28ef7;
+   box-shadow: 0 0 20px 5px #9e44f8,
+     inset 0 0 20px 7px  #9e44f8;
+ }
 .inactive {
   opacity: 50%;
   background-color: transparent;

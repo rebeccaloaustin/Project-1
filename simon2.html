@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Game</title>
-    <link rel="stylesheet" href="simon.css">
-    <script defer src="simon.js"></script>
+    <link rel="stylesheet" href="simon2.css">
+    <script defer src="simon2.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -14,23 +14,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="playBtn" id="startBtn"> Start </button>
+    <div class="infoTab">How to Play</div>
+    <div class="howToPlay"> To play, remember the color pattern and repeat it by pressing the colored buttons in the correct order until level 15 is reached and player wins.</div>
     <div id="messageBox"> Click start to play! Reach level 15 to win! </div>
-    <div class= "leveldisplay" id="levelDisplay">Level: 0 </div>
     <div class="container">
         <div class="btn blue inactive" data-color="blue"></div>
         <div class="btn red inactive" data-color="red"></div>
         <div class="btn yellow inactive" data-color="yellow"></div>
         <div class="btn green inactive" data-color="green"></div>
+        <div class="btn purple inactive" data-color="purple"></div>
     </div>
-    <div class="infoTab">How to Play</div>
-    <div class="howToPlay"> To play, remember the color pattern and repeat it by pressing the colored buttons in the correct order until level 15 is reached and player wins.</div>
     <audio src="simonSound1.mp3" data-sound="blue"></audio>
     <audio src="simonSound2.mp3" data-sound="red"></audio>
     <audio src="simonSound3.mp3" data-sound="yellow"></audio>
     <audio src="simonSound4.mp3" data-sound="green"></audio>
     <audio src="gameOver.wav" id="gameOverSound"></audio>
     <audio src="winGame.wav" id="winGameSound"></audio>
-   
+    <div class= "leveldisplay" id="levelDisplay">Level: 0 </div>
+    <button class="playBtn" id="startBtn"> Start </button>
 </body>
 </html>

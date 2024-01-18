@@ -1,132 +1,175 @@
-body{
+body {
   background-image: url(https://media.istockphoto.com/id/1320984490/vector/dark-blue-nightly-brick-wall-realistic-design-background.jpg?s=612x612&w=0&k=20&c=41XKAFqHHsliC_s9tX138MUnE88FzjwxgyRpjLquvVY=);
-    background-size: auto;
+  background-size: auto;
+  margin: 0; 
+  overflow-x: hidden; 
 }
+
 .font-effect-neon {
-    font-family: Monoton;
-    font-size: 135px;
-    text-align: center;
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 250px;
-    border: 5px solid rgba(33, 241, 227, 0.974);
-    box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.98), inset 0 0 20px 7px rgba(0, 255, 238, 0.869);
-    border-radius:20px;
-
-  }
-  .font-effect-neon{
-    text-decoration: none;
-  }
-  .font-effect-neon:hover{
-    box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.989), inset 0 0 20px 7px rgb(0, 255, 238);
-    border-radius:20px;
-    animation: border-flicker 2s linear infinite;
-  }
-  .enjoySign {
-    text-align: center;
-    text-decoration: none;
-    margin-top: 400px;
-    margin-left: 1020px;
-    position: absolute;
-    border: 5px solid rgba(98, 183, 248, 0.989);
-    box-shadow: 0 0 20px 5px rgba(116, 146, 237, 0.989), inset 0 0 20px 7px rgba(116, 146, 237, 0.989);
-    width: 250px;
-    border-radius: 20px;
-    color: #fb69ea;
-    text-shadow: 0 0 14px #f81ae5;
-    font-family: 'Neonderthaw', cursive;
-    font-size: 55px;
-    letter-spacing: 10px;
-    background-color: transparent;
-    z-index: 1;
-    position: absolute;
-    box-shadow: 0 0 20px 5px rgba(116, 146, 237, 0.989), inset 0 0 20px 7px rgba(116, 146, 237, 0.989);
-    border-radius:20px;
-  }
-  
-  .enjoySign:hover{
-    text-shadow: 0 0 14px #f81ae5;
-    cursor: pointer;
-    z-index: 2;
-    border-radius:20px;
-    animation: border-flicker2 2s linear infinite;
-  }
-/* learned flicker effect from this resource https://codemyui.com/css-flickering-effect-neon-text/ */
-  @keyframes border-flicker {
-    0% {
-      opacity: 0.1;
-      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.99), inset 0px 0px 30px 4px rgb(0, 255, 238);
-    }
-    2% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869), inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
-    }
-    4% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869), inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
-    }
-    8% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
-    }
-    70% {
-      opacity: 0.7;
-      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
-    }
-    100% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
-    }
-  }
-  @keyframes border-flicker2 {
-    0% {
-      opacity: 0.1;
-      box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99), inset 0px 0px 30px 4px rgba(83, 179, 247, 0.99);
-    }
-    2% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99), inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
-    }
-    4% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99), inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
-    }
-    8% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99),inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
-    }
-    70% {
-      opacity: 0.7;
-      box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99),inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
-    }
-    100% {
-      opacity: 1;
-      box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99),inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
-    }
-  }
-#fire{
-  height: 300px;
+  font-family: Monoton;
+  font-size: 8vw;
+  text-align: center;
   position: absolute;
-  margin-top: 400px;
-  margin-left: 50px;
+  top: 10%; 
+  left: 10%; 
+  border: 5px solid rgba(33, 241, 227, 0.974);
+  box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.98), inset 0 0 20px 7px rgba(0, 255, 238, 0.869);
+  border-radius: 20px;
 }
 
-#planet{
-position: absolute;
-height: 180px;
-
+.font-effect-neon {
+  text-decoration: none;
 }
 
-#icecream{
-position: absolute;
-height: 275px;
-margin-left: 1250px;
-margin-top: 60px;
+.font-effect-neon:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 255, 238, 0.989), inset 0 0 20px 7px rgb(0, 255, 238);
+  border-radius: 20px;
+  animation: border-flicker 2s linear infinite;
 }
 
-#arrow{
-position: absolute;
-height: 300px;
-margin-left: 600px;
-margin-top: 300px;
+.enjoySign {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 25%; 
+  left: 60%; 
+  position: absolute;
+  border: 5px solid rgba(98, 183, 248, 0.989);
+  box-shadow: 0 0 20px 5px rgba(116, 146, 237, 0.989), inset 0 0 20px 7px rgba(116, 146, 237, 0.989);
+  width: 25%; 
+  border-radius: 20px;
+  color: #fb69ea;
+  text-shadow: 0 0 14px #f81ae5;
+  font-family: 'Neonderthaw', cursive;
+  font-size: 4vw; 
+  letter-spacing: 1vw; 
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0 0 20px 5px rgba(116, 146, 237, 0.989), inset 0 0 20px 7px rgba(116, 146, 237, 0.989);
+}
+
+.enjoySign:hover {
+  text-shadow: 0 0 14px #f81ae5;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 20px;
+  animation: border-flicker2 2s linear infinite;
+}
+
+#fire {
+  height: 20vw; 
+  position: absolute;
+  top: 60%; 
+  left: 5%; 
+}
+
+#planet {
+  position: absolute;
+  height: 12vw; 
+  top: 10%; 
+  right: 5%;
+}
+
+#icecream {
+  position: absolute;
+  height: 14vw; 
+  top: 65%; 
+  left: 86%; 
+}
+
+#arrow {
+  position: absolute;
+  height: 16vw; 
+  top: 40%; 
+  left: 40%; 
+}
+
+
+@media only screen and (max-width: 768px) {
+  .font-effect-neon {
+    font-size: 13vw;
+    top: 20%; 
+    left: 4%; 
+  }
+
+  .enjoySign {
+    margin-top: 150%; 
+    left: 55%; 
+    width: 35%; 
+    font-size: 8vw; 
+    letter-spacing: 0.5vw; 
+  }
+
+  #fire{
+    height: 40vw;
+    top: 80%; 
+    left: 10%; 
+  }
+  #planet{
+    height: 25vw;
+    top: 2%; 
+    left: 5%; 
+  }
+  #icecream{
+    height: 40vw;
+    top: 43%; 
+    left: 60%; 
+  }
+  #arrow {
+    height: 40vw;
+    top: 32%; 
+    left: 10%; 
+  }
+}
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.99), inset 0px 0px 30px 4px rgb(0, 255, 238);
+  }
+  2% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869), inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+  }
+  4% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869), inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+  }
+  8% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+  }
+  70% {
+    opacity: 0.7;
+    box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(0, 255, 238, 0.869),inset 0px 0px 30px 5px rgba(0, 255, 238, 0.869);
+  }
+}
+@keyframes border-flicker2 {
+  0% {
+    opacity: 0.1;
+    box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99), inset 0px 0px 30px 4px rgba(83, 179, 247, 0.99);
+  }
+  2% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99), inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
+  }
+  4% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99), inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
+  }
+  8% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99),inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
+  }
+  70% {
+    opacity: 0.7;
+    box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99),inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0px 0px 60px 5px rgba(83, 179, 247, 0.99),inset 0px 0px 30px 5px rgba(83, 179, 247, 0.99);
+  }
 }

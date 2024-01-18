@@ -1,5 +1,5 @@
 //Define variables:
-const colors = ["red", "yellow", "green", "blue"];
+const colors = ["red", "yellow", "green", "blue", "purple"];
 let simonSequence = [];
 let userSequence = [];
 let level;
@@ -26,7 +26,7 @@ startButton.addEventListener("click", startGame);
 
 //function to start game & start level at 1
 function startGame() {
-  startButton.style.visibility = "hidden";
+  startButton.style.display = "none";
   message.innerText = "watch the sequence";
   level = 0;
   simonSequence = [];
@@ -109,14 +109,13 @@ function checkSequence() {
 function winGame() {
   const winGameSound = document.getElementById("winGameSound");
   winGameSound.play();
-  message.innerText = "Congratulations you're a genius! Want to play again?";
-  startButton.style.display = "block";
+  message.innerText = "Congratulations you're a genius! You win!";
   gameStarted = false;
 }
 function gameOver() {
   message.innerText = "Game over, you lose. Press start to try again.";
   const gameOverSound = document.getElementById("gameOverSound");
   gameOverSound.play();
-  startButton.style.visibility = "visible";
+  startButton.style.display = "block";
   gameStarted = false;
 }
